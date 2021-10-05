@@ -4,40 +4,28 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
 @Entity
-public class Student {
+public class College {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer Id;
-	private String  FirstName;
-	private String  LastName;
+	private String  CollegeName;
 	private String  UserName;
-	private String  Email;
+	private Integer  MobileNumber;
+	private String  Address;
 	private String  PassWord;
-	private String  College;
-	public String getCollege() {
-		return College;
-	}
-	public void setCollege(String college) {
-		College = college;
-	}
 	public Integer getId() {
 		return Id;
 	}
 	public void setId(Integer id) {
 		Id = id;
 	}
-	public String getFirstName() {
-		return FirstName;
+	public String getCollegeName() {
+		return CollegeName;
 	}
-	public void setFirstName(String firstName) {
-		FirstName = firstName;
-	}
-	public String getLastName() {
-		return LastName;
-	}
-	public void setLastName(String lastName) {
-		LastName = lastName;
+	public void setCollegeName(String collegeName) {
+		CollegeName = collegeName;
 	}
 	public String getUserName() {
 		return UserName;
@@ -45,16 +33,23 @@ public class Student {
 	public void setUserName(String userName) {
 		UserName = userName;
 	}
-	public String getEmail() {
-		return Email;
+	public Integer getMobileNumber() {
+		return MobileNumber;
 	}
-	public void setEmail(String email) {
-		Email = email;
+	public void setMobileNumber(Integer mobileNumber) {
+		MobileNumber = mobileNumber;
+	}
+	public String getAddress() {
+		return Address;
+	}
+	public void setAddress(String address) {
+		Address = address;
 	}
 	public String getPassWord() {
 		return PassWord;
 	}
 	public void setPassWord(String passWord) {
 		PassWord = passWord;
-	}
+	}	
+
 }
