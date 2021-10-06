@@ -22,15 +22,15 @@ public class CollegeController {
 	@Autowired
 	private CollegeRepository CollegeRepo;
 	@PostMapping(value = "/insert")
-	public ResponseEntity<?> insertcollege(@RequestBody final College s){
-		CollegeRepo.save(s);        
+	public ResponseEntity<?> insertcollege(@RequestBody final College c){
+		CollegeRepo.save(c);        
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body("College inserted Successfully");
     }
 	@PostMapping(value="/update")
-	public ResponseEntity<?> updateCollege(@RequestBody final College s){
-		CollegeRepo.save(s);
+	public ResponseEntity<?> updateCollege(@RequestBody final College c){
+		CollegeRepo.save(c);
 		return ResponseEntity
 				.status(HttpStatus.OK)
 				.body("College saved successfully!");
