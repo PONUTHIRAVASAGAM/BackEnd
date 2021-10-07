@@ -10,34 +10,34 @@ public class College {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer Id;
-	private String  CollegeName;
-	private String  UserName;
-	private Integer  MobileNumber;
+	private String  Collegename;
+	private String  Username;
+	private Integer  Mobilenumber;
 	private String  Address;
-	private String  PassWord;
+	private String  Password;
 	public Integer getId() {
 		return Id;
 	}
 	public void setId(Integer id) {
 		Id = id;
 	}
-	public String getCollegeName() {
-		return CollegeName;
+	public String getCollegename() {
+		return Collegename;
 	}
-	public void setCollegeName(String collegeName) {
-		CollegeName = collegeName;
+	public void setCollegename(String collegename) {
+		Collegename = collegename;
 	}
-	public String getUserName() {
-		return UserName;
+	public String getUsername() {
+		return Username;
 	}
-	public void setUserName(String userName) {
-		UserName = userName;
+	public void setUsername(String username) {
+		Username = username;
 	}
-	public Integer getMobileNumber() {
-		return MobileNumber;
+	public Integer getMobilenumber() {
+		return Mobilenumber;
 	}
-	public void setMobileNumber(Integer mobileNumber) {
-		MobileNumber = mobileNumber;
+	public void setMobilenumber(Integer mobilenumber) {
+		Mobilenumber = mobilenumber;
 	}
 	public String getAddress() {
 		return Address;
@@ -45,11 +45,11 @@ public class College {
 	public void setAddress(String address) {
 		Address = address;
 	}
-	public String getPassWord() {
-		return PassWord;
+	public String getPassword() {
+		return Password;
 	}
-	public void setPassWord(String passWord) {
-		PassWord = passWord;
-	}	
+	public void setPassword(String password) {
+		Password = password;
+	}
 
 }

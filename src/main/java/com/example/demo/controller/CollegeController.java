@@ -58,4 +58,18 @@ public class CollegeController {
 				.body("College deleted Successfully!");
 		
 	}
+	@PostMapping(value = "/login")	
+	public ResponseEntity<?> findByUsernameAndPassword(@RequestBody final College cl){
+		College college = (College) CollegeRepo.findByUserNameAndPassWord(cl.getUsername(), cl.getPassword());
+		if(college!=null)
+			return ResponseEntity
+					.status(HttpStatus.OK)
+					.body("login successfully");
+		else
+			return ResponseEntity
+					.status(HttpStatus.BAD_REQUEST)
+					.body("login failed");
+			
+	
+	}
 	}
