@@ -59,7 +59,7 @@ public class CollegeController {
 		
 	}
 	@PostMapping(value = "/login")	
-	public ResponseEntity<?> findByUsernameAndPassword(@RequestBody final College cl){
+	public ResponseEntity<?> loginCollege(@RequestBody final College cl){
 		College college = (College) CollegeRepo.findByUserNameAndPassWord(cl.getUsername(), cl.getPassword());
 		if(college!=null)
 			return ResponseEntity
