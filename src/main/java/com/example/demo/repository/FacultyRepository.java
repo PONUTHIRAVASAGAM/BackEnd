@@ -1,5 +1,9 @@
 package com.example.demo.repository;
 
-public class FacultyRepository {
+import org.springframework.data.repository.CrudRepository;
+
+import com.example.demo.modal.Faculty;
+
+public interface FacultyRepository extends CrudRepository<Faculty,Integer> {
 
 }
