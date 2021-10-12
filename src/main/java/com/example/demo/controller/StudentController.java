@@ -56,6 +56,18 @@ public ResponseEntity<?> deleteStudent(@PathVariable final int id){
 			.status(HttpStatus.OK)
 			.body("Student deleted Successfully!");
 	
-}
+    }
+@PostMapping(value = "/login")	
+public ResponseEntity<?> loginStudent(@RequestBody final Student log){
+	Student student = (Student) StudentRepo.findByUserNameAndPassWord(log.getUsername(), log.getPassword());
+	if(student!=null)
+		return ResponseEntity
+				.status(HttpStatus.OK)
+				.body("login successfully");
+	else
+		return ResponseEntity
+				.status(HttpStatus.BAD_REQUEST)
+				.body("login failed");
+}	
     }
 

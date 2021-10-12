@@ -6,14 +6,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class College {
+public class Admin {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer Id;
-	private String  Collegename;
 	private String  Username;
-	private Long  Mobilenumber;
-	private String  Address;
 	private String  Password;
 	public Integer getId() {
 		return Id;
@@ -21,29 +18,11 @@ public class College {
 	public void setId(Integer id) {
 		Id = id;
 	}
-	public String getCollegename() {
-		return Collegename;
-	}
-	public void setCollegename(String collegename) {
-		Collegename = collegename;
-	}
 	public String getUsername() {
 		return Username;
 	}
 	public void setUsername(String username) {
 		Username = username;
-	}
-	public Long getMobilenumber() {
-		return Mobilenumber;
-	}
-	public void setMobilenumber(Long mobilenumber) {
-		Mobilenumber = mobilenumber;
-	}
-	public String getAddress() {
-		return Address;
-	}
-	public void setAddress(String address) {
-		Address = address;
 	}
 	public String getPassword() {
 		return Password;

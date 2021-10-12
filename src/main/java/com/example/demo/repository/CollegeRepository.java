@@ -7,6 +7,6 @@ import com.example.demo.modal.College;
 
 public interface CollegeRepository extends CrudRepository<College,Integer>{
 	
-	@Query("SELECT cl from College cl where cl.Username=?1 and cl.Password=?2")	
+	@Query("SELECT log from College log where log.Username=?1 and log.Password=?2")	
 	College findByUserNameAndPassWord(String username, String password);
 }

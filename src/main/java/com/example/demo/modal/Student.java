@@ -9,41 +9,35 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer Id;
-	private String  FirstName;
-	private String  LastName;
-	private String  UserName;
+	private String  Firstname;
+	private String  Lastname;
+	private String  Username;
 	private String  Email;
-	private String  PassWord;
+	private String  Password;
 	private String  College;
-	public String getCollege() {
-		return College;
-	}
-	public void setCollege(String college) {
-		College = college;
-	}
 	public Integer getId() {
 		return Id;
 	}
 	public void setId(Integer id) {
 		Id = id;
 	}
-	public String getFirstName() {
-		return FirstName;
+	public String getFirstname() {
+		return Firstname;
 	}
-	public void setFirstName(String firstName) {
-		FirstName = firstName;
+	public void setFirstname(String firstname) {
+		Firstname = firstname;
 	}
-	public String getLastName() {
-		return LastName;
+	public String getLastname() {
+		return Lastname;
 	}
-	public void setLastName(String lastName) {
-		LastName = lastName;
+	public void setLastname(String lastname) {
+		Lastname = lastname;
 	}
-	public String getUserName() {
-		return UserName;
+	public String getUsername() {
+		return Username;
 	}
-	public void setUserName(String userName) {
-		UserName = userName;
+	public void setUsername(String username) {
+		Username = username;
 	}
 	public String getEmail() {
 		return Email;
@@ -51,10 +45,17 @@ public class Student {
 	public void setEmail(String email) {
 		Email = email;
 	}
-	public String getPassWord() {
-		return PassWord;
+	public String getPassword() {
+		return Password;
 	}
-	public void setPassWord(String passWord) {
-		PassWord = passWord;
+	public void setPassword(String password) {
+		Password = password;
 	}
+	public String getCollege() {
+		return College;
+	}
+	public void setCollege(String college) {
+		College = college;
+	}
+
 }
